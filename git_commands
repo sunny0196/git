@@ -119,7 +119,7 @@ GIT REMOTE COMMANDS:
 	 
 ======================================================================================
 	 
-13)  delete an repository in the local
+13)  delete an repository in the local when out of the directory:
 	 rm -r <filename>
 
 ========================================================
