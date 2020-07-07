@@ -1,0 +1,126 @@
+git bash provides linux command prompt feature.
+
+
+1)	how to find git version:
+	git --version  
+==================================================================================================================================================
+
+2)	how to configure local git to remote git:To start using Git from your computer, you’ll need to enter your credentials (user name and email)
+	to identify you as the author of your work. The user name and email should match the ones you’re using on GitHub.
+	git config --global user.email "you@example.com"
+	git config --global user.name "Your Name"
+	
+===================================================================================================================================================
+
+3)	how to Verify new remote git:
+	git remote -v
+	
+=======================================================================
+
+4)	how to clone git repository ( from remote to local):
+
+	git clone <provide remote git repository https url>
+	
+==========================================================================================================================================================================
+
+5)	The git add command adds a change in the working directory to the staging area. It tells Git that you want to include updates to a particular file in the next commit. 
+	However, git add doesn't really affect the repository in any significant way—changes are not actually recorded until you run git commit.
+	
+	git add .  (To add all changes to commit)
+	git add <file/folder name>
+	
+===============================================================================================
+
+6)	The git status command displays the state of the working directory and the staging area.
+	git status 
+	
+===============================================================================================
+
+7)	To move changes from the staging area to the local repository.( to record changes)
+	git commit -am  "commit message"
+	
+==============================================================================================
+
+8)	To check the status of the files and the staging area.
+	git status 
+	
+=================================================================================================
+	
+9)	to push changes from the local master branch to the remote master branch
+
+	git push origin 
+origin: is local git name.
+
+ 
+*********************************************************************************************************************************************
+NOTE:
+
+
+In Git, commit is the term used for saving changes.
+Git does not add changes to a commit automatically. 
+You need to indicate which file and changes need to be saved before running the Git commit command.
+The commit command does not save changes in remote servers, only in the local repository of Git.
+
+Staging in Git refers to a phase which includes all the changes you want to include in the next commit. Here are the steps leading to staging:
+working directory->staging area->.git directory( repository)
+
+You make changes to a file in the working directory.
+You use the Git add command to move those changes from the working directory to the staging area.
+Git does not save changes yet. You need to run the Git commit command to move changes from the staging area to the local repository.
+Additionally, you may use git status command to check the status of the files and the staging area. If changes are not staged for commit, they won't be saved.
+
+
+
+*****************************************************************************************************************************************************************
+
+
+GIT REMOTE COMMANDS:
+
+	to add new remote
+	git remote add <name> <https://github.com/user/repo.git>
+	
+    to rename git remote name
+	git remote rename <old> <new>
+	
+	to remove remote git
+	git remote remove <name>
+
+
+===========================================================================================
+
+10)	rename a folder
+	rename <foldername> <newname>
+	
+==================================================	
+
+11) remove a file
+	rm <filename>
+	
+	steps to perform removal
+	rm <filename>
+	git status
+	git add <filename>
+	git commit -am "removal"
+	git remote -v
+	git push name
+	
+=========================================================
+ 
+ 12) adding file 
+     touch <filename>
+	 
+	 steps to perform adding
+	 
+	 git add .                       :adds the changes. 
+	 git status                      : to check status.
+	 git commit -am "adding"         : saves the changes.
+	 git status                      : to check status.
+	 git push name                   : to push changes from local to remote.
+	 
+======================================================================================
+	 
+13)  delete an repository in the local
+	 rm -r <filename>
+
+========================================================
+
