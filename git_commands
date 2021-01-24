@@ -123,4 +123,6 @@ GIT REMOTE COMMANDS:
 	 rm -r <filename>
 
 ========================================================
+14) branch commands:
+     git branch <branch-name>  :to create new branch in local.
 
