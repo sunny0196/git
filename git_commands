@@ -127,4 +127,7 @@ GIT REMOTE COMMANDS:
      git branch <branch-name>  :to create new branch in local.
      git branch -d <branch-name> : to delete merged branch
       git branch -D <branch-name> : to delete non-merged branch
+     git branch <new-branch-name>  :to create new branch in local.
+     git checkout -b <new-branch-name> : to create new branch and checkout into it.
+     
 
