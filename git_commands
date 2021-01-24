@@ -15,6 +15,9 @@ git bash provides linux command prompt feature.
 3)	how to Verify new remote git:
 	git remote -v
 	
+	how to rename remote git name:
+	git remote rename <oldname> <newname>
+	
 =======================================================================
 
 4)	how to clone git repository ( from remote to local):
